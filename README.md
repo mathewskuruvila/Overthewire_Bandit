@@ -27,5 +27,31 @@ bandit1@bandit:~$ cat ./-
 ─$ ssh bandit2@bandit.labs.overthewire.org -p2220
 ```
 ```
-password : ZjLjTmM6FvvyRnrb2rfNWOZOTa6ip5If
+password : 263JGJPfgU6LtdEvgfWU1XP5yac29mFx
+```
+```
+bandit2@bandit:~$ ls
+bandit2@bandit:~$ cat "spaces in this filename"
+```
+#### level 3:
+```
+─$ ssh bandit3@bandit.labs.overthewire.org -p2220
+```
+```
+password : MNk8KNH3Usiio41PRUEoDFPqfxLPlSmx
+```
+```
+bandit3@bandit:~$ ls
+inhere
+bandit3@bandit:~$ cd inhere
+bandit3@bandit:~/inhere$ ls -a
+.  ..  ...Hiding-From-You
+bandit3@bandit:~/inhere$ cat ...Hiding-From-You 
+```
+#### level 4:
+```
+─$ ssh bandit4@bandit.labs.overthewire.org -p2220
+```
+```
+password : 2WmrDFRmJIq3IPxneAaMGhap0pFhF3NJ
 ```
