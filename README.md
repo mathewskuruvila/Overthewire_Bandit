@@ -84,3 +84,15 @@ bandit5@bandit:~/inhere$ cat ./maybehere07/.file2
 ```
 password : HWasnPhtq9AVKe0dmk45nxy20cvUa6EG
 ```
+```
+bandit6@bandit:~$ find  / -type f -user bandit7 -group bandit6 -size 33c 2>/dev/null
+/var/lib/dpkg/info/bandit7.password
+bandit6@bandit:~$ cat /var/lib/dpkg/info/bandit7.password
+```
+#### level 7:
+```
+─$ ssh bandit7@bandit.labs.overthewire.org -p2220
+```
+```
+password : morbNTDkSW6jIlUc0ymOdMaLnOlFVAaj
+```
