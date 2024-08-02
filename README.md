@@ -96,3 +96,27 @@ bandit6@bandit:~$ cat /var/lib/dpkg/info/bandit7.password
 ```
 password : morbNTDkSW6jIlUc0ymOdMaLnOlFVAaj
 ```
+```
+bandit7@bandit:~$ ls
+data.txt
+bandit7@bandit:~$ cat data.txt | grep millionth
+```
+#### level 8:
+```
+─$ ssh bandit8@bandit.labs.overthewire.org -p2220
+```
+```
+password : dfwvzFQi4mU0wfNbFOe9RoWskMLg7eEc
+```
+```
+bandit8@bandit:~$ ls
+data.txt
+bandit8@bandit:~$ sort data.txt | uniq -u
+```
+#### level 9:
+```
+─$ ssh bandit9@bandit.labs.overthewire.org -p2220
+```
+```
+password : 4CKMh1JI91bUIZZPXDqGanal4xvAg0JM
+```
