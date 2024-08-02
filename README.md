@@ -137,3 +137,10 @@ bandit10@bandit:~$ cat data.txt
 VGhlIHBhc3N3b3JkIGlzIGR0UjE3M2ZaS2IwUlJzREZTR3NnMlJXbnBOVmozcVJyCg==
 bandit10@bandit:~$ cat data.txt | base64 --decode
 ```
+#### level 11:
+```
+─$ ssh bandit11@bandit.labs.overthewire.org -p2220
+```
+```
+password : dtR173fZKb0RRsDFSGsg2RWnpNVj3qRr
+```
