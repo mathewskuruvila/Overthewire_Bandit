@@ -120,3 +120,20 @@ bandit8@bandit:~$ sort data.txt | uniq -u
 ```
 password : 4CKMh1JI91bUIZZPXDqGanal4xvAg0JM
 ```
+```
+bandit9@bandit:~$ strings data.txt | grep "="
+```
+#### level 10:
+```
+─$ ssh bandit10@bandit.labs.overthewire.org -p2220
+```
+```
+password : FGUW5ilLVJrxX9kMYMmlN4MgbpfMiqey
+```
+```
+bandit10@bandit:~$ ls
+data.txt
+bandit10@bandit:~$ cat data.txt
+VGhlIHBhc3N3b3JkIGlzIGR0UjE3M2ZaS2IwUlJzREZTR3NnMlJXbnBOVmozcVJyCg==
+bandit10@bandit:~$ cat data.txt | base64 --decode
+```
