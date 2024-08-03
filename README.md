@@ -151,3 +151,81 @@ bandit11@bandit:~$ cat data.txt
 Gur cnffjbeq vf 7k16JArUVv5LxVuJfsSVdbbtaHGlw9D4
 bandit11@bandit:~$ cat data.txt | tr '[A-Za-z]' '[N-ZA-Mn-za-m]'
 ```
+
+#### level 12:
+```
+─$ ssh bandit12@bandit.labs.overthewire.org -p2220
+```
+```
+password : 7x16WNeHIi5YkIhWsfFIqoognUTyj9Q4
+```
+```
+bandit12@bandit:~$ mkdir /tmp/xyz
+bandit12@bandit:~$ cp data.txt /tmp/xyz
+bandit12@bandit:~$ cd /tmp/xyz
+bandit12@bandit:/tmp/xyz$ ls
+data.txt
+bandit12@bandit:/tmp/xyz$ xxd -r data.txt > data_xxd_reverse
+
+bandit12@bandit:/tmp/xyz$ file data_xxd_reverse
+data_xxd_reverse: gzip compressed data, was "data2.bin", last modified: Thu May  7 18:14:30 2020, max compression, from Unix
+
+bandit12@bandit:/tmp/xyz$ zcat data_xxd_reverse > data_zcat
+bandit12@bandit:/tmp/xyz$ file data_zcat
+data_zcat: bzip2 compressed data, block size = 900k
+
+bandit12@bandit:/tmp/xyz$ bzip2 -d data_zcat
+bzip2: Can't guess original name for data_zcat -- using data_zcat.out
+bandit12@bandit:/tmp/xyz$ file data_zcat.out
+data_zcat.out: gzip compressed data, was "data4.bin", last modified: Thu May  7 18:14:30 2020, max compression, from Unix
+
+bandit12@bandit:/tmp/xyz$ zcat data_zcat.out > data_zcat_2
+bandit12@bandit:/tmp/xyz$ file data_zcat_2
+data_zcat_2: POSIX tar archive (GNU)
+
+bandit12@bandit:/tmp/xyz$ tar -xvf data_zcat_2
+data5.bin
+bandit12@bandit:/tmp/xyz$ file data5.bin
+data5.bin: POSIX tar archive (GNU)
+
+bandit12@bandit:/tmp/xyz$ tar -xvf data5.bin
+data6.bin
+bandit12@bandit:/tmp/xyz$ file data6.bin
+data6.bin: bzip2 compressed data, block size = 900k
+
+bandit12@bandit:/tmp/xyz$ bzip2 -d data6.bin
+bzip2: Can't guess original name for data6.bin -- using data6.bin.out
+bandit12@bandit:/tmp/xyz$ file data6.bin.out
+data6.bin.out: POSIX tar archive (GNU)
+
+bandit12@bandit:/tmp/xyz$ tar -xvf data6.bin.out
+data8.bin
+bandit12@bandit:/tmp/xyz$ file data8.bin
+data8.bin: gzip compressed data, was "data9.bin", last modified: Thu May  7 18:14:30 2020, max compression, from Unix
+
+bandit12@bandit:/tmp/xyz$ zcat data8.bin
+
+```
+##### Key Takeaways
+gzip decompress
+
+$ zcat in_file > out_file
+
+bzip2 decompress
+
+$ bzip2 -d file
+
+tar decompress
+
+$ tar xvf file
+
+#### level 13:
+```
+─$ ssh bandit13@bandit.labs.overthewire.org -p2220
+```
+```
+password : FO5dwFsc0cbaIiH0h8J2eUks2vdTDwAn
+```
+```
+
+```
