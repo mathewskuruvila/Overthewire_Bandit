@@ -144,3 +144,10 @@ bandit10@bandit:~$ cat data.txt | base64 --decode
 ```
 password : dtR173fZKb0RRsDFSGsg2RWnpNVj3qRr
 ```
+```
+bandit11@bandit:~$ ls
+data.txt
+bandit11@bandit:~$ cat data.txt 
+Gur cnffjbeq vf 7k16JArUVv5LxVuJfsSVdbbtaHGlw9D4
+bandit11@bandit:~$ cat data.txt | tr '[A-Za-z]' '[N-ZA-Mn-za-m]'
+```
