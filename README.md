@@ -227,5 +227,10 @@ $ tar xvf file
 password : FO5dwFsc0cbaIiH0h8J2eUks2vdTDwAn
 ```
 ```
+bandit13@bandit:~$ ls
+sshkey.private
+bandit13@bandit:~$ file sshkey.private
+sshkey.private: PEM RSA private key
+bandit13@bandit:~$ cat sshkey.private 
 
 ```
