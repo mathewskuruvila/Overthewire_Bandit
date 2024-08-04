@@ -220,6 +220,7 @@ tar decompress
 $ tar xvf file
 
 #### level 13:
+
 ```
 ─$ ssh bandit13@bandit.labs.overthewire.org -p2220
 ```
@@ -232,5 +233,11 @@ sshkey.private
 bandit13@bandit:~$ file sshkey.private
 sshkey.private: PEM RSA private key
 bandit13@bandit:~$ cat sshkey.private 
+bandit13@bandit:~$ ssh bandit14@localhost -i sshkey.private -p 2220
+```
+#### level 14:
+```
+bandit14@bandit:~$ cat /etc/bandit_pass/bandit14
+MU4VWeTyJk8ROof1qqmcBPaLh7lDCPvS
 
 ```
