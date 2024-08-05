@@ -239,5 +239,8 @@ bandit13@bandit:~$ ssh bandit14@localhost -i sshkey.private -p 2220
 ```
 bandit14@bandit:~$ cat /etc/bandit_pass/bandit14
 MU4VWeTyJk8ROof1qqmcBPaLh7lDCPvS
+```
+#### level 15:
+```
 
 ```
