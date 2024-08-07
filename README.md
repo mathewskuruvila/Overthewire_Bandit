@@ -206,7 +206,7 @@ data8.bin: gzip compressed data, was "data9.bin", last modified: Thu May  7 18:1
 bandit12@bandit:/tmp/xyz$ zcat data8.bin
 
 ```
-##### Key Takeaways
+#### Key Takeaways
 gzip decompress
 
 $ zcat in_file > out_file
@@ -242,5 +242,8 @@ MU4VWeTyJk8ROof1qqmcBPaLh7lDCPvS
 ```
 #### level 15:
 ```
-
+bandit14@bandit:~$ nc localhost 30000
+MU4VWeTyJk8ROof1qqmcBPaLh7lDCPvS                                
+Correct!
+8xCjnmgoKbGLhHFAZlGE5Tmu4M2tKJQo
 ```
